@@ -12,28 +12,28 @@ digraph G {
   n8 [shape = "trapezium", label="bridges_thermostat_regulate_temperature_manage_heat_source"]
   n9 [shape = "trapezium", label="bridges_thermostat_regulate_temperature_manage_regulator_interface"]
   n10 [shape = "trapezium", label="bridges_thermostat_regulate_temperature_manage_regulator_mode"]
-  n11 [shape = "trapezium", label="apis_heat_source_cpi"]
-  n12 [shape = "trapezium", label="data"]
-  n13 [shape = "trapezium", label="apis_operator_interface_oip"]
-  n14 [shape = "trapezium", label="apis_temperature_sensor_cpi"]
-  n15 [shape = "trapezium", label="apis_thermostat_monitor_temperature_manage_alarm"]
-  n16 [shape = "trapezium", label="apis_thermostat_monitor_temperature_manage_monitor_interface"]
-  n17 [shape = "trapezium", label="apis_thermostat_monitor_temperature_manage_monitor_mode"]
-  n18 [shape = "trapezium", label="apis_thermostat_regulate_temperature_manage_heat_source"]
-  n19 [shape = "trapezium", label="apis_thermostat_regulate_temperature_manage_regulator_interface"]
-  n20 [shape = "trapezium", label="apis_thermostat_regulate_temperature_manage_regulator_mode"]
-  n21 [shape = "trapezium", label="components_heat_source_cpi"]
-  n22 [shape = "trapezium", label="components_operator_interface_oip"]
-  n23 [shape = "trapezium", label="components_temperature_sensor_cpi"]
-  n24 [shape = "trapezium", label="components_thermostat_monitor_temperature_manage_alarm"]
-  n25 [shape = "trapezium", label="components_thermostat_monitor_temperature_manage_monitor_interface"]
+  n11 [shape = "trapezium", label="data"]
+  n12 [shape = "trapezium", label="library"]
+  n13 [shape = "trapezium", label="demo"]
+  n14 [shape = "trapezium", label="test"]
+  n15 [shape = "trapezium", label="apis_heat_source_cpi"]
+  n16 [shape = "trapezium", label="components_heat_source_cpi"]
+  n17 [shape = "trapezium", label="apis_operator_interface_oip"]
+  n18 [shape = "trapezium", label="components_operator_interface_oip"]
+  n19 [shape = "trapezium", label="apis_temperature_sensor_cpi"]
+  n20 [shape = "trapezium", label="components_temperature_sensor_cpi"]
+  n21 [shape = "trapezium", label="apis_thermostat_monitor_temperature_manage_alarm"]
+  n22 [shape = "trapezium", label="components_thermostat_monitor_temperature_manage_alarm"]
+  n23 [shape = "trapezium", label="apis_thermostat_monitor_temperature_manage_monitor_interface"]
+  n24 [shape = "trapezium", label="components_thermostat_monitor_temperature_manage_monitor_interface"]
+  n25 [shape = "trapezium", label="apis_thermostat_monitor_temperature_manage_monitor_mode"]
   n26 [shape = "trapezium", label="components_thermostat_monitor_temperature_manage_monitor_mode"]
-  n27 [shape = "trapezium", label="components_thermostat_regulate_temperature_manage_heat_source"]
-  n28 [shape = "trapezium", label="components_thermostat_regulate_temperature_manage_regulator_interface"]
-  n29 [shape = "trapezium", label="components_thermostat_regulate_temperature_manage_regulator_mode"]
-  n30 [shape = "trapezium", label="library"]
-  n31 [shape = "trapezium", label="demo"]
-  n32 [shape = "trapezium", label="test"]
+  n27 [shape = "trapezium", label="apis_thermostat_regulate_temperature_manage_heat_source"]
+  n28 [shape = "trapezium", label="components_thermostat_regulate_temperature_manage_heat_source"]
+  n29 [shape = "trapezium", label="apis_thermostat_regulate_temperature_manage_regulator_interface"]
+  n30 [shape = "trapezium", label="components_thermostat_regulate_temperature_manage_regulator_interface"]
+  n31 [shape = "trapezium", label="apis_thermostat_regulate_temperature_manage_regulator_mode"]
+  n32 [shape = "trapezium", label="components_thermostat_regulate_temperature_manage_regulator_mode"]
 
   n1 -> n2
   n1 -> n3
@@ -44,44 +44,44 @@ digraph G {
   n1 -> n8
   n1 -> n9
   n1 -> n10
-  n2 -> n21
-  n3 -> n22
-  n4 -> n23
-  n5 -> n24
-  n6 -> n25
+  n2 -> n16
+  n3 -> n18
+  n4 -> n20
+  n5 -> n22
+  n6 -> n24
   n7 -> n26
-  n8 -> n27
-  n9 -> n28
-  n10 -> n29
-  n11 -> n12
-  n12 -> n0
-  n13 -> n12
-  n14 -> n12
-  n15 -> n12
+  n8 -> n28
+  n9 -> n30
+  n10 -> n32
+  n11 -> n0
+  n12 -> n11
+  n13 -> n1
+  n14 -> n1
+  n15 -> n11
+  n16 -> n15
   n16 -> n12
-  n17 -> n12
+  n17 -> n11
+  n18 -> n17
   n18 -> n12
-  n19 -> n12
+  n19 -> n11
+  n20 -> n19
   n20 -> n12
   n21 -> n11
-  n21 -> n30
-  n22 -> n13
-  n22 -> n30
-  n23 -> n14
-  n23 -> n30
-  n24 -> n15
-  n24 -> n30
-  n25 -> n16
-  n25 -> n30
-  n26 -> n17
-  n26 -> n30
-  n27 -> n18
-  n27 -> n30
-  n28 -> n19
-  n28 -> n30
-  n29 -> n20
-  n29 -> n30
+  n22 -> n21
+  n22 -> n12
+  n23 -> n11
+  n24 -> n23
+  n24 -> n12
+  n25 -> n11
+  n26 -> n25
+  n26 -> n12
+  n27 -> n11
+  n28 -> n27
+  n28 -> n12
+  n29 -> n11
+  n30 -> n29
   n30 -> n12
-  n31 -> n1
-  n32 -> n1
+  n31 -> n11
+  n32 -> n31
+  n32 -> n12
 }
